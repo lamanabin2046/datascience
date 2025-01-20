@@ -259,7 +259,7 @@
     - `git commit -m "message to commit"`
 
 ### 20. Push the new branch to the gitHub
-  - Run the command:
+  - Run the command:bin
     - `git push origin <branch name>`
 
 ### 21. Create a pull request:
