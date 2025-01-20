@@ -1,0 +1,291 @@
+## Objective:
+- To Install Git
+- To set up Git on your computer
+- To configure GitHub
+- Create your first repo.
+
+## Instructions:
+- Complete the following steps and provide Screenshot logs
+
+##Part 1:
+
+### 1. Download Git
+- Go to the official [website](https://git-scm.com/downloads) and download git
+
+### 2. install Git
+- Run the downloaded Installer and follow the instructions
+- Accept the default settings
+
+### 3. Verify Installation
+- Open termial (Command Prompt, Git Bash, termial)
+- Run the following to verify the installation:
+    - `git --version`
+
+## Part 2: Set up Git on your computer
+
+### 4. Configure your identity:
+
+- Set up your username:
+    - `git config --global user.name "your Name"`
+
+- Set up your email address
+    - `git config --global user.email "your.email@example.com"`
+
+### 5. Verify configurations
+
+- Check your configurations settings
+    - `git config --list`
+
+## Part 3: Create a github Account:
+### 6. Sign up for GitHub
+- Go to www.github.com and sign up for a free account
+- Follow instructions for verification and complete the email registration process.
+
+## Part 4: Set up SSH keys (Optional but recommended)
+### 7. Generate an SSH Key
+- Open your terminal - You can use the gitbash for this
+- Run the command
+    - `ssh-keygen -t rsa -b 4096 -C "your.email@example.com"`
+  - Follo the prompts to save the key ( Default locations)
+
+### 8. Add the SSH key to the SSH Agent:
+
+  - Start the SSH Agent in the background:
+    - `eval "$(ssh-agent -s)"`
+  - Add the SSH Key private to the SSH Agent:
+    - `ssh-add ~/.ssh/id_rsa`
+
+### 9. Add SSH Key to GitHub
+  - Copy the SSH key to your clipboard:
+    - `cat ~/.ssh/id_rsa.pub`
+
+  - Go to GitHub, navigate to your profile, and go to settings.
+  - In the "SSH and GPG keys" section, click "New SSH Key"
+  - Paste your SSH key and save.
+
+
+## Part 5: Create Your First Repository:
+
+### 10. Create a New Repository on GitHub:
+  - Go to GitHub and log in
+  - Click on "New" button to create a new repository
+  - Fill in the repository Name, description, Choose to make it public
+  - Innitialize the repository with a README file
+  - Click on Create
+
+### 11. Clone the repository to your local Machine:
+  - Copy the repository URL (use SSH)
+  - Open your terminal
+  - Run the command to clone the repo:
+    - `git clone git@github.com:your-username/your-repository-name.git`
+
+### 12. Navigate ot the Repository Directory
+  - Run the command:
+    - `cd your-repository-name`
+
+## Part 6: Add and Commit Changes
+### 13. Create a new file:
+  - Create a new file in the repo dir. like "Hello.txt" aadd some content to the file
+
+
+### 14. Add your file to the staging:
+  - Run the command:
+    - `git add Hello.txt`
+
+### 15. Commit the Changes:
+  - Run the command:
+    - `git commit -m "Added a Hello.txt file"`
+
+### 16. Push the changes to the Github:
+  - Run the command:
+    - `git push origin main`
+
+## Part 7: Collaborate with Others
+### 17. Create a new Branch:
+  - Run the Command to create a new branch:
+    - `git checkout -b <branch name>`
+### 18. Make changes to the new branch
+  - Modify the existing file or create a new file
+
+### 19. Add and commit Changes:
+  - Run the commands:
+    - `git add .`
+    - `git commit -m "message to commit"`
+
+### 20. Push the new branch to the gitHub
+  - Run the command:
+    - `git push origin <branch name>`
+
+### 21. Create a pull request:
+  - Go to your repo on Github
+  - click on "Pull Requests" and then "New pull Request"
+  - Select your branch and create the pull request
+  - Add a description and submit the pull request
+
+## Part 8: Review and Merge the pull Requests
+
+### 22. Review the pull request:
+  - Review the pull requests on GitHub
+  - Add comments on Request changes if neccesary
+
+### 23. Merge the Pull Request:
+  - Once satisfied with the changes, merge the pull request.
+
+### 24. Delete the Branch
+  - Optionally delete the branch after merging.
+
+# Submission:
+  - Provide evidence ot the followwwing:
+    - Screenshot of git Installation and version verifications
+    - Screenshots of Git Configurations
+    - Screenshot of GitHub Profile
+    - Screenshot of SSH key setup process
+    - A link to your Github Repo
+    - A screenshot of the terminal commands used to clone, add, commit, push, create branches....
+    - Screenshot of the pull request creation, review, merge process.
+
+    ## Objective:
+- To Install Git
+- To set up Git on your computer
+- To configure GitHub
+- Create your first repo.
+
+## Instructions:
+- Complete the following steps and provide Screenshot logs
+
+##Part 1:
+
+### 1. Download Git
+- Go to the official [website](https://git-scm.com/downloads) and download git
+
+### 2. install Git
+- Run the downloaded Installer and follow the instructions
+- Accept the default settings
+
+### 3. Verify Installation
+- Open termial (Command Prompt, Git Bash, termial)
+- Run the following to verify the installation:
+    - `git --version`
+
+## Part 2: Set up Git on your computer
+
+### 4. Configure your identity:
+
+- Set up your username:
+    - `git config --global user.name "your Name"`
+
+- Set up your email address
+    - `git config --global user.email "your.email@example.com"`
+
+### 5. Verify configurations
+
+- Check your configurations settings
+    - `git config --list`
+
+## Part 3: Create a github Account:
+### 6. Sign up for GitHub
+- Go to www.github.com and sign up for a free account
+- Follow instructions for verification and complete the email registration process.
+
+## Part 4: Set up SSH keys (Optional but recommended)
+### 7. Generate an SSH Key
+- Open your terminal - You can use the gitbash for this
+- Run the command
+    - `ssh-keygen -t rsa -b 4096 -C "your.email@example.com"`
+  - Follo the prompts to save the key ( Default locations)
+
+### 8. Add the SSH key to the SSH Agent:
+
+  - Start the SSH Agent in the background:
+    - `eval "$(ssh-agent -s)"`
+  - Add the SSH Key private to the SSH Agent:
+    - `ssh-add ~/.ssh/id_rsa`
+
+### 9. Add SSH Key to GitHub
+  - Copy the SSH key to your clipboard:
+    - `cat ~/.ssh/id_rsa.pub`
+
+  - Go to GitHub, navigate to your profile, and go to settings.
+  - In the "SSH and GPG keys" section, click "New SSH Key"
+  - Paste your SSH key and save.
+
+
+## Part 5: Create Your First Repository:
+
+### 10. Create a New Repository on GitHub:
+  - Go to GitHub and log in
+  - Click on "New" button to create a new repository
+  - Fill in the repository Name, description, Choose to make it public
+  - Innitialize the repository with a README file
+  - Click on Create
+
+### 11. Clone the repository to your local Machine:
+  - Copy the repository URL (use SSH)
+  - Open your terminal
+  - Run the command to clone the repo:
+    - `git clone git@github.com:your-username/your-repository-name.git`
+
+### 12. Navigate ot the Repository Directory
+  - Run the command:
+    - `cd your-repository-name`
+
+## Part 6: Add and Commit Changes
+### 13. Create a new file:
+  - Create a new file in the repo dir. like "Hello.txt" aadd some content to the file
+
+
+### 14. Add your file to the staging:
+  - Run the command:
+    - `git add Hello.txt`
+
+### 15. Commit the Changes:
+  - Run the command:
+    - `git commit -m "Added a Hello.txt file"`
+
+### 16. Push the changes to the Github:
+  - Run the command:
+    - `git push origin main`
+
+## Part 7: Collaborate with Others
+### 17. Create a new Branch:
+  - Run the Command to create a new branch:
+    - `git checkout -b <branch name>`
+### 18. Make changes to the new branch
+  - Modify the existing file or create a new file
+
+### 19. Add and commit Changes:
+  - Run the commands:
+    - `git add .`
+    - `git commit -m "message to commit"`
+
+### 20. Push the new branch to the gitHub
+  - Run the command:
+    - `git push origin <branch name>`
+
+### 21. Create a pull request:
+  - Go to your repo on Github
+  - click on "Pull Requests" and then "New pull Request"
+  - Select your branch and create the pull request
+  - Add a description and submit the pull request
+
+## Part 8: Review and Merge the pull Requests
+
+### 22. Review the pull request:
+  - Review the pull requests on GitHub
+  - Add comments on Request changes if neccesary
+
+### 23. Merge the Pull Request:
+  - Once satisfied with the changes, merge the pull request.
+
+### 24. Delete the Branch
+  - Optionally delete the branch after merging.
+
+# Submission:
+  - Provide evidence ot the followwwing:
+    - Screenshot of git Installation and version verifications
+    - Screenshots of Git Configurations
+    - Screenshot of GitHub Profile
+    - Screenshot of SSH key setup process
+    - A link to your Github Repo
+    - A screenshot of the terminal commands used to clone, add, commit, push, create branches....
+    - Screenshot of the pull request creation, review, merge process.
